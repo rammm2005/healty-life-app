@@ -176,6 +176,19 @@ const RegisterScreen = () => {
                         </Text>
                     </TouchableOpacity>
 
+                    <TouchableOpacity
+                        style={styles.googleButton}
+                        onPress={handleGoogleSignIn}
+                    >
+                        <Image
+                            source={require('../../assets/images/facebook-logo.png')}
+                            style={styles.facebookIcon}
+                        />
+                        <Text style={styles.googleButtonText}>
+                            Continue with Facebook
+                        </Text>
+                    </TouchableOpacity>
+
                     <View style={styles.loginContainer}>
                         <Text style={styles.loginText}>
                             Already have an account?{' '}
@@ -345,6 +358,11 @@ const styles = StyleSheet.create({
     googleIcon: {
         width: 20,
         height: 20,
+        marginRight: 10,
+    },
+    facebookIcon: {
+        width: 25,
+        height: 25,
         marginRight: 10,
     },
     googleButtonText: {
